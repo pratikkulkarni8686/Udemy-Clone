@@ -1,0 +1,394 @@
+body{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: #1c1d1f;
+    margin: 0;
+    word-break: keep-all;
+    overflow-x: hidden !important;
+}
+
+
+@font-face {
+    font-family: 'Udemy Sans';
+    font-style: normal;
+    font-weight: 400; /* To match token @font-weight-normal */
+    font-display: fallback;
+    src: local('Udemy Sans Regular'),
+         local('UdemySans-Regular'),
+         url('https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Udemy Sans';
+    font-style: normal;
+    font-weight: 700; /* To match token @font-weight-bold */
+    font-display: fallback;
+    src: local('Udemy Sans Bold'),
+         local('UdemySans-Bold'),
+         url('https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Theinhardt Mono';
+    font-display: fallback;
+    src: local('Theinhardt Mono Regular'),
+         local('TheinhardtMono-Regular'),
+         url('https://www.udemy.com/staticx/udemy/fonts/Theinhardt-Mono-Regular-v2.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: SuisseWorks;
+    font-style: normal;
+    font-weight: 700; /* To match token @font-weight-bold */
+    font-display: fallback;
+    src: local('SuisseWorks Bold'),
+         local('SuisseWorks-Bold'),
+         url('https://www.udemy.com/staticx/udemy/fonts/SuisseWorks-Bold-v1.woff2') format('woff2');
+}
+
+.company{
+    background: #fff;
+    height: 72px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1010;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dddd;
+}
+
+.company-head{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 16px;
+    color: #1c1d1f;
+    display: block!important;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-width: 200px;
+    max-height: 3.9rem;
+}
+
+.explore{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+
+.third-level-menu
+{
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border: 1px solid #ddd;
+}
+
+.third-level-menu > li
+{
+    background: #fff;
+    color: #000000;
+    padding: 5px;
+}
+.third-level-menu > li:hover { color: blueviolet; }
+
+.second-level-menu
+{
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #fff;
+    /* z-index: 1; */
+    border: 1px solid #ddd;
+}
+
+.second-level-menu li a{
+    padding: .8rem 1.6rem;
+}
+
+.second-level-menu > li
+{
+    position: relative;
+    color: #000000;
+    padding: 5px 0;
+}
+.second-level-menu > li:hover { color: blueviolet; }
+
+.top-level-menu
+{
+    list-style: none;
+}
+
+.top-level-menu > li
+{
+    position: relative;
+    float: left;
+    padding-top: 28px;
+}
+.top-level-menu > li:hover { color: blueviolet; }
+
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+.nava{
+    font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.4rem;
+}
+
+/* Menu Link Styles */
+
+.top-level-menu a /* Apply to all links inside the multi-level menu */
+{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
+    color: #1c1d1f;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 15px 0;
+}
+.top-level-menu a:hover { color:blueviolet; }
+
+.search{
+    position: relative;
+    width: 50%;
+}
+
+.search-left{
+    padding-left: 40px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 25px !important;
+    border: 1px solid black !important;
+}
+
+.svg-search{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.path{
+    padding-right: 25px;
+}
+
+.path a , .teach a , .learning a{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
+    color: #1c1d1f;
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 15px 0;
+}
+
+
+.footer{
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+    padding-top: 2.4rem !important;
+    background: #1c1d1f;
+    border-top: 1px solid #3e4143;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.get-started{
+    flex-basis: 16.6rem;
+    margin-right: 1.6rem;
+    margin-bottom: 0;
+}
+.get-started h6{
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.footer-flex{
+    display: flex;
+}
+
+.btn-dark{
+    background-color: transparent !important;
+    border-color: #fff !important;
+    border-radius: 0 !important;
+    width: 140px !important;
+}
+
+.footer-btn{
+    margin-left: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 625px){
+    .footer-flex{
+        display: block;
+    }
+}
+
+.footer-btn svg{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+.udemy-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.udemy-logo svg{
+    width: 200px;
+    height: 34.04px;
+}
+
+.copy{
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+.special{
+    color: #6a6f73 !important;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 14px;
+    padding: 10px !important;
+}
+
+.icon{
+    float: right;
+    
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+
+.second-level-menu span{
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.pk{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.target{
+    display: none;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+    padding: 20px;
+
+}
+
+.message{
+    position: absolute;
+    z-index: 10000;
+    top: 58px;
+    left: 34%;
+    width: 700px;
+    background-color: #ddd;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+
+.message::-webkit-scrollbar {
+    width: 12px;               
+}
+  
+.message::-webkit-scrollbar-track {
+    background: #ddd;       
+}
+
+.message::-webkit-scrollbar-thumb {
+    background-color: #525252;
+    border-radius: 20px;       
+    border: 2px solid #808080; 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .my-learning{
+        display: block !important;
+    }
+
+    .card-wid1{
+        margin-left: 0 !important;
+    }
+
+    .card-wid, .card-wid1{
+        width: 100% !important;
+    }
+
+    .play img{
+        width: 120px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .pk{
+        display: none;
+    }
+
+    .teach{
+        display: none;
+    }
+    .learning{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 435px) {
+    .path{
+        display: none;
+    }
+
+    .nava{
+        display: none;
+    }
+
+}
